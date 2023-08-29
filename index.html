@@ -33,13 +33,67 @@
         .section p {
             color: #080808;
         }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #7eb9e9;
+        }
+        header {
+            background-color: #185fa1;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        .menu {
+            background-color: #1c0a86;
+            padding: 10px;
+            text-align: center;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #000000;
+        }
+        .section p {
+            color: #080808;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>TEORIA GENERAL DE SISTEMAS.</h1>
     </header>  
-    <div class="section">
+    <div class="menu">
+        <ul>
+            <li><a href="#tgs">TGS</a></li>
+            <li><a href="#elementos">Elementos y Componentes</a></li>
+            <li><a href="#subsistemas">Subsistemas</a></li>
+            <li><a href="#entropia">Entropia y Neguentropia</a></li>
+            <li><a href="#propiedades">Propiedades Emergentes</a></li>
+            <li><a href="#ejemplo">Ejemplo</a></li>
+        </ul>
+    </div>
+    <div id="TGS" class="section">
             <p>La "TGS" hace referencia a la Teoría General de Sistemas. La Teoría General de Sistemas es un enfoque interdisciplinario que busca describir y entender las propiedades y comportamientos comunes de una amplia variedad de sistemas, independientemente de su naturaleza específica. Esta teoría fue propuesta por el biólogo austríaco Ludwig von Bertalanffy en la década de 1950 y se ha convertido en un marco conceptual influyente en diversas disciplinas, incluyendo la biología, la física, la sociología, la psicología, la ingeniería y la administración, entre otras.</p>
 
             <p>La Teoría General de Sistemas sostiene que los sistemas comparten ciertos principios y características en común, independientemente de su dominio de aplicación. Algunos conceptos clave dentro de la TGS son:</p> 
@@ -49,23 +103,23 @@
             <p>4.Entrada proceso y salida</p>
             <p>5.Subsistemas</p>
     </div>
-    <div class="section">
+    <div id="elementos" class="section">
         <h2>ELEMENTOS Y COMPONENTES DE UN SISTEMA.</h2>
         <p>Los elementos de sistema son las piezas fundamentales que componen un sistema más grande. Pueden ser físicos o abstractos, pero juntos crean un todo coherente. Los componentes de un sistema son las partes que desempeñan roles específicos en el funcionamiento general del sistema. Exploraremos cómo estos elementos y componentes interactúan y se organizan para lograr objetivos definidos.</p>
         
         <div style="text-align: center;">
         <img src= "img/elementos_sistema_u42.png" width="500" height=" 300">>
         </div>
-
+        <div id="subsistemas" class="section">
         <h2>SUBSISTEMAS.</h2>
         <p>Un subsistema se configura como un elemento constitutivo de un sistema mayor, siendo capaz de operar con autonomía dentro de la interacción con otros subsistemas. Esta colaboración facilita la consecución del objetivo global y el funcionamiento pleno del sistema en su totalidad. La adopción de subsistemas es común en situaciones donde la complejidad del sistema podría ser ardua de abordar en su conjunto. Al descomponer el sistema en subsistemas independientes, es posible simplificar tanto el proceso de diseño como la implementación y el mantenimiento. Por consiguiente, se logra que el sistema sea susceptible de ser concebido y administrado de manera más eficiente.</p>
         
         <div style="text-align: center;">
         <img src= "img/sistema.png" alt="Elementos de Sistema">
         </div>
-
+        </div> 
     </div>
-    <div class="section">
+    <div id="entropia" class="section">
         <h2>Entropia y Neguentropia</h2>
         <p>
             <sub><h3>Entropia</h3></sub>
@@ -101,7 +155,8 @@
             <p><b>5.Gestión del Cambio:</b> La neguentropía también puede aplicarse en la gestión del cambio organizacional. Cuando se introducen cambios en una organización, se pueden implementar estrategias para reducir la resistencia y el caos, manteniendo un orden y estructura efectivos.</p>
         </p>
     </div>
-    <div class="section">
+    </div>
+    <div id="propiedades" class="section">
         <h2>Relaciones entre Partes y Propiedades Emergentes</h2>
         <p>Las interacciones entre los componentes de un sistema pueden generar propiedades emergentes, las cuales son cualidades o conductas que no son aparentes en los elementos individuales, pero que surgen de la totalidad y de las conexiones entre dichos elementos. Estas propiedades emergentes juegan un papel esencial en la comprensión de cómo los sistemas complicados operan y cómo sus partes se amalgaman para crear conductas colectivas y consecuencias no anticipadas.</p>
         <sub><h3>Relacion entre partes</h3></sub>
@@ -110,7 +165,7 @@
         <p>Propiedades Emergentes: Cuando las partes de un sistema interactúan, pueden surgir características o comportamientos que no son inherentes a las partes individuales. Estas propiedades emergentes no se pueden deducir directamente del estudio de las partes individuales, ya que su origen se encuentra en las interacciones y relaciones entre esas partes. Algunos ejemplos de propiedades emergentes son:</p>
     </div>
     
-    <div class="section">
+    <div id="ejemplo" class="section">
         <h2>Ejemplo.</h2>
         <p>Imagina estar en un estadio lleno durante un emocionante partido de fútbol. Cada individuo en el estadio está animando y gritando por su equipo. Sin embargo, en lugar de escuchar voces individuales, percibes un murmullo constante que parece emanar de la multitud en su conjunto.</p>
         
